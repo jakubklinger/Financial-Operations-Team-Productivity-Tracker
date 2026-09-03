@@ -6,11 +6,12 @@ Feedback worksheet was added for a continous improvement.
 
 
 🎯 Objectives
-
-Tracking daily productivity based on several different worktypes with assigned weights
-Providing easy to use tool for employees that can be used further by analysts and managers
-Utilizing weiged sums for the calculations
-Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for new date and preparing charts)
+<ul>
+<li>Tracking daily productivity based on several different worktypes with assigned weights</li>
+<li>Providing easy to use tool for employees that can be used further by analysts and managers</li>
+<li>Utilizing weiged sums for the calculations</li>
+<li>Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for new date and preparing charts)</li>
+</ul>
 
 📋 Files
 Financial Operations Team Productivity Tracker Ver 1.0.xlsm
@@ -19,12 +20,15 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 
 | Worksheet | Description |
 |---------|-------------|
-| `Dashboard` | Stores number of tasks processed daily, AHT (Average Handle Time) and productivity results. Utilizes buttons for adding new day, new work item and clear cell's content. |
+| `Dashboard`| Stores number of tasks processed daily, AHT (Average Handle Time) and productivity results. Utilizes buttons for adding new day, new work item and clear cell's content. |
 | `Chart` | Contains PivotTable and Pivot Chart for easy visual comparison of day by day productivity. |
 | `Feedback` | Dropdown based sheet created for a continous improvement based on the feedback received. |
+| `License` | Describes MIT License details. |
 
 
 🛠️ Stack
 Microsoft Excel 365
 
-</> Example Queries
+</> VBA Scripts 
+
+
