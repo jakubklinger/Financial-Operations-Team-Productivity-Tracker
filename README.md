@@ -2,6 +2,8 @@
 
 📌 **Project Overview**
 
+
+
 The aim was to create an Excel tracking tool that could be utilised by investment/mutual funds companies. It combines easy to use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self assestment of employee's results. What's more this can be utilized as part of streamling the productivity assetments by analysts and managers. 
 Feedback worksheet was added for a continous improvement.
 
