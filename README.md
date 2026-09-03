@@ -41,6 +41,7 @@ Microsoft Excel 365
 <img width="323" height="529" alt="image" src="https://github.com/user-attachments/assets/0bdc4806-65cc-4e3c-8e7f-0f4dfad59435" />
 
 💻 **Delete Work Item**
+
 <img width="531" height="110" alt="image" src="https://github.com/user-attachments/assets/cb6b7fca-dca9-4ec2-9b62-984b2567efe0" />
 
 💻 **Add New Day**
