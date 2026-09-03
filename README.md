@@ -8,7 +8,7 @@ The aim was to create an Excel tracking tool that could be utilised by investmen
 Feedback worksheet was added for a continous improvement.
 
 
-🎯 Objectives
+🎯 **Objectives**
 <ul>
 <li>Tracking daily productivity based on several different worktypes with assigned weights</li>
 <li>Providing easy to use tool for employees that can be used further by analysts and managers</li>
@@ -17,10 +17,10 @@ Feedback worksheet was added for a continous improvement.
 <li>Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for new date and preparing charts)</li>
 </ul>
 
-📋 Files
+📋 **Files**
 Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 
-🗄️ Worksheets
+🗄️ **Worksheets**
 
 | Worksheet | Description |
 |---------|-------------|
@@ -30,7 +30,7 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 | `License` | Describes MIT License details. |
 
 
-🛠️ Stack
+🛠️ **Stack**
 Microsoft Excel 365
 
 **</>** **VBA Scripts **
