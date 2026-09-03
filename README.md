@@ -29,7 +29,7 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 🛠️ Stack
 Microsoft Excel 365
 
-</> VBA Scripts 
+</> **VBA Scripts **
 
 
 💻 **Add Work Item**
