@@ -41,7 +41,9 @@ Microsoft Excel 365
 
 ** Average Handle Time (AHT) Sum & Procuctivity Formula**
 
-Assuming that 400 out of 480 work minutes are spend on  actual task processing.
+Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
+
+<img width="181" height="19" alt="image" src="https://github.com/user-attachments/assets/f71e5128-be53-404c-a4c9-b9faaed6bf97" />
 
 
 **</>** **VBA Scripts **
