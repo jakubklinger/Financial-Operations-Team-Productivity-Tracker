@@ -52,7 +52,7 @@ When calcuating the productivity, we need to remember that employee won't be spe
 
 Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
 
-Formula : **=SUMPRODUCT(B4:K4;$P$16:$Y$16)**
+Formula : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
 
 
 **</>** **VBA Scripts **
