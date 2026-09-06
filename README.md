@@ -37,6 +37,12 @@ Microsoft Excel 365
 
 <img width="1115" height="398" alt="image" src="https://github.com/user-attachments/assets/4b8f6b5c-3743-45c3-858a-db3b407b5001" />
 
+**🧮Formulas**
+
+** Average Handle Time (AHT) Sum & Procuctivity Formula**
+
+Assuming that 400 out of 480 work minutes are spend on  actual task processing.
+
 
 **</>** **VBA Scripts **
 
