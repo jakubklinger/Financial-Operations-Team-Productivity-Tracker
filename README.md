@@ -44,11 +44,13 @@ Microsoft Excel 365
 
 ** Average Handle Time (AHT) Sum & Procuctivity Formula**
 
+AHT formulas are calculated based on a weighted sum. Some tasks are longer due to extra steps or complexity. I estimated the
+
 When calcuating the productivity, we need to remember that employee won't be spending 100% of their login time on processing tasks. Lunch break, meetings, trainings or scheduled updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 mintes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
 
 Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
 
-<img width="181" height="19" alt="image" src="https://github.com/user-attachments/assets/f71e5128-be53-404c-a4c9-b9faaed6bf97" />
+
 
 
 **</>** **VBA Scripts **
