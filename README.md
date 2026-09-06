@@ -4,7 +4,10 @@
 
 
 
-The aim was to create an Excel tracking tool that could be utilised by investment/mutual funds companies. It combines easy to use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self assestment of employee's results. What's more this can be utilized as part of streamling the productivity assetments by analysts and managers. 
+The aim was to create an Excel tracking tool that could be utilised by investment/mutual funds companies. 
+
+It combines easy to use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self assestment of employee's results. What's more this tool can be utilized as a part of the productivity assetments by analysts and managers. 
+
 Feedback worksheet was added for a continous improvement.
 
 
@@ -13,7 +16,7 @@ Feedback worksheet was added for a continous improvement.
 <li>Tracking daily productivity based on several different worktypes with assigned weights</li>
 <li>Providing easy to use tool for employees that can be used further by analysts and managers</li>
 <li>Utilizing weiged sums for the calculations</li>
-<li>Conditional Formating assigned to productivity values</li>
+<li>Conditional formating assigned to productivity values</li>
 <li>Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for new date and preparing charts)</li>
 </ul>
 
@@ -40,6 +43,8 @@ Microsoft Excel 365
 **🧮Formulas**
 
 ** Average Handle Time (AHT) Sum & Procuctivity Formula**
+
+When calcuating the productivity, we need to remember that employee won't be spending 100% of their login time on processing tasks. Lunch break, meetings, trainings or scheduled updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 mintes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
 
 Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
 
