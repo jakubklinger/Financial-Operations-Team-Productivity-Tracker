@@ -2,14 +2,9 @@
 
 📌 **Project Overview**
 
-
-
 The aim was to create an Excel productivity tracking tool that could be utilised by investment/mutual funds companies. 
 
-It combines an easy-to-use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self-assessment of employee results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
-A feedback worksheet was added for a continous improvement.
-
-2. Business Problems
+💡Business Problems
 
 <ul>
 <li>Productivity was being tracked manually.</li>
@@ -18,8 +13,12 @@ A feedback worksheet was added for a continous improvement.
 <li>Managers need an easy way to monitor trends.</li>li>
 </ul>
 
-** Business Impact **
-This tool reduces manual reporting time, standardizes productivity measurement, and enables managers to identify bottlenecks in daily operations.
+💡 Solution
+
+These problems could be solved with an Excel tool that will combines several functionalities with an easy-to-use interface.
+This tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self-assessment of employee results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
+A feedback worksheet was added for a continous improvement.
+
 
 🎯 **Objectives**
 <ul>
@@ -29,6 +28,8 @@ This tool reduces manual reporting time, standardizes productivity measurement, 
 <li>Conditional formating assigned to productivity values</li>
 <li>Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for a new date and preparing charts)</li>
 </ul>
+
+
 
 📋 **Files**
 Financial Operations Team Productivity Tracker Ver 1.0.xlsm
