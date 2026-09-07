@@ -54,7 +54,7 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 <li>PivotTables & PivotCharts</li>
 <li>Conditional Formatting</li>
 
-📊**Dashboard Overview**
+**Dashboard Overview**📊
 
 
 <img width="1115" height="398" alt="image" src="https://github.com/user-attachments/assets/4b8f6b5c-3743-45c3-858a-db3b407b5001" />
