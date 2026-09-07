@@ -6,21 +6,19 @@
 
 The aim was to create an Excel tracking tool that could be utilised by investment/mutual funds companies. 
 
-It combines easy to use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self assessment of employee's results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
-
-Feedback worksheet was added for a continous improvement.
-
+It combines an easy-to-use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self-assessment of employee results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
+A feedback worksheet was added for a continous improvement.
 
 ** Business Impact **
 This tool reduces manual reporting time, standardizes productivity measurement, and enables managers to identify bottlenecks in daily operations.
 
 🎯 **Objectives**
 <ul>
-<li>Tracking daily productivity based on several different worktypes with assigned weights</li>
-<li>Providing easy to use tool for employees that can be used further by analysts and managers</li>
+<li>Tracking daily productivity based on several different work types with assigned weights</li>
+<li>Providing an easy-to-use tool for employees that can be used further by analysts and managers</li>
 <li>Utilizing weiged sums for the calculations</li>
 <li>Conditional formating assigned to productivity values</li>
-<li>Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for new date and preparing charts)</li>
+<li>Implementing simple VBA script to minimalize manual input and automate reccuring actions (adding a line for a new date and preparing charts)</li>
 </ul>
 
 📋 **Files**
@@ -30,8 +28,8 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 
 | Worksheet | Description |
 |---------|-------------|
-| `Dashboard`| Stores number of tasks processed daily, AHT (Average Handle Time) and productivity results. Utilizes buttons for adding new day, new work item and clear cell's content. |
-| `Chart` | Contains PivotTable and Pivot Chart for easy visual comparison of day by day productivity. |
+| `Dashboard`| Stores number of tasks processed daily, AHT (Average Handle Time) and productivity results. Utilizes buttons for adding a new day, new work item and clearing cell content. |
+| `Chart` | Contains PivotTable and PivotChart for easy visual comparison of day-by-day productivity. |
 | `Feedback` | Provides a structured dropdown‑based form created for a continous improvement based on the feedback received. |
 | `License` | Describes MIT License details. |
 
@@ -54,7 +52,7 @@ AHT formulas are calculated based on a weighted sum. Some tasks are longer due t
 
 <img width="905" height="71" alt="image" src="https://github.com/user-attachments/assets/20438cbd-5fa7-4658-a98b-b0b93ccd3178" />
 
-When calcuating the productivity, we need to remember that employee won't be spending 100% of their login time on processing tasks. Lunch break, meetings, trainings or scheduled system updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 mintes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
+When calcuating the productivity, we need to remember that an employee won't be spending 100% of their login time on processing tasks. Lunch breaks, meetings, trainings or scheduled system updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 mintes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
 
 Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
 
@@ -74,7 +72,7 @@ Calculating the average values might give employees a data representation of the
 As above, "IFERROR" operator was used to avoid blank rows throwing an error and the result is rounded up to two decimal places.
 
 ** Top Day (Best productivity) **
-To find the top performance day, I used the MATCH operator to join the date (A column) of the highest valey in M column (Productivity). 
+To find the top performance day, I used the MATCH operator to join the date (A column) of the highest value in M column (Productivity). 
 
 **<h3> =TEXT(INDEX(A:A; MATCH(MAX(M:M); M:M; 0)); "DD/MM")
  & " - "
@@ -84,7 +82,7 @@ To find the top performance day, I used the MATCH operator to join the date (A c
 
 💻 **Add Work Item**
 
-This script was used to allow easy adding of new work item. The worktype is selected from a dropdown list first and then button can be used to increase the value of selected work type.
+This script was used to allow easy adding of a new work item. The work type is selected from a dropdown list first and then button can be used to increase the value of the selected work type.
 
 <img width="323" height="529" alt="image" src="https://github.com/user-attachments/assets/0bdc4806-65cc-4e3c-8e7f-0f4dfad59435" />
 
@@ -98,7 +96,7 @@ This simple macro was included to allow quick clearing of the cells without disr
 
 💻 **Add New Day**
 
-Adding a new date for the Data worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, macro was created in a way that ensures that only date and formulas are copied to next day, while not duplicating the previous work ammount values.
+Adding a new date for the Data worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, the macro was created in a way that ensures that only the date and formulas are copied to the next day, while not duplicating the previous work ammount values.
 
 <img width="370" height="279" alt="image" src="https://github.com/user-attachments/assets/57750589-b7c8-493f-b06c-512f7bdaa4aa" />
 
