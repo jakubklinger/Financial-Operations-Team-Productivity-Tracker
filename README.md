@@ -42,20 +42,32 @@ Microsoft Excel 365
 
 **🧮Formulas**
 
-** Average Handle Time (AHT) Sum & Procuctivity Formula**
+** Average Handle Time (AHT) Sum & Procuctivity Formulas*
 
 AHT formulas are calculated based on a weighted sum. Some tasks are longer due to extra steps or complexity. I estimated the weights as below:
 
 <img width="905" height="71" alt="image" src="https://github.com/user-attachments/assets/20438cbd-5fa7-4658-a98b-b0b93ccd3178" />
 
-When calcuating the productivity, we need to remember that employee won't be spending 100% of their login time on processing tasks. Lunch break, meetings, trainings or scheduled updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 mintes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
+When calcuating the productivity, we need to remember that employee won't be spending 100% of their login time on processing tasks. Lunch break, meetings, trainings or scheduled system updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 mintes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
 
 Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
 
-Formula : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
+**AHT Formula** : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
 
+Productivity 
+
+**Productivity Formula** : <h3> **=ROUND(L4/400; 2)** </h3> alternatively: =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2)
 
 **</>** **VBA Scripts **
+
+
+** Average AHT and Average Productivity **
+
+Calculating the average values might give employees a data representation of their progress, especially when paired with conditional formatting (low results- red, average results- yellow, good results- green).
+
+**Average AHT Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(L:L; ">0"); 2); 0) </h3>**
+
+
 
 
 💻 **Add Work Item**
