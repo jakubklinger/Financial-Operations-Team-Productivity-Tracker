@@ -110,9 +110,7 @@ Adding a new date for the Data worksheet is easy with VBA usage. After clicking 
 
 💡 **Key Insight**
 
-Good quality work tools need to be based on an approach that involves minimum user input while allowing for complex calculations. With this tool I wanted to showcase that utilizing simple VBA scripts can help with creating a file that is easy to use for an end user while still providing advanced functionality.
-
+Good quality work tools need to be based on an approach that involves minimum user input while allowing for complex calculations. With this tool I wanted to showcase that utilizing simple VBA scripts can help with creating a file that is easy to use for an end user while still providing advanced functionality. Weighted productivity provides a more informative measure than task volume alone because different work types have different complexity levels.
 
 ✉ **---Contact me---**
 For any questions, please contact me at jakub.klinger1996@gmail.com.
-
