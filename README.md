@@ -7,17 +7,17 @@ A prototype Excel productivity tracking solution designed around a financial ope
 💡**Business Problems**
 
 <ul>
-<li>Productivity was being tracked manually.</li>
-<li>Different work types have different complexity.</li>
-<li>Raw task counts aren't sufficient for fair productivity comparison.</li>
-<li>Managers need an easy way to monitor trends.</li>
+<li>Productivity was being tracked manually</li>
+<li>Different work types have different complexity</li>
+<li>Raw task counts aren't sufficient for fair productivity comparison</li>
+<li>Managers need an easy way to monitor trends</li>
 </ul>
 
-💡 Solution
+📊**Solution**
 
-These problems could be solved with an Excel tool that combines several functionalities with an easy-to-use interface.
+These problems can be solved with an Excel tool that combines several functionalities with an easy-to-use interface.
 The tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily productivity calculations can provide a useful way for employees to assess their performance. Additionally, this tool can be utilized as a part of productivity assessments by analysts and managers. 
-A feedback worksheet was added to support continuous improvement.
+
 
 
 🎯 **Objectives**
@@ -29,13 +29,12 @@ A feedback worksheet was added to support continuous improvement.
 
 ✨ Key Features
 <ul>
- (adding a line for a new date and preparing charts)
-
-
 <li>Utilizing weighted sums for the calculations</li>
 <li>Conditional formatting assigned to productivity values</li>
+<li>Buttons with dedicated VBA scripts for adding work items and new dates as well as removing items</li>
+<li>PivotTable and Pivot for visualizing day-by-day progress</li>
+<li>Feedback worksheet for continuous improvement</li>
 </ul>
-
 
 📋 **Files**
 Financial Operations Team Productivity Tracker Ver 1.0.xlsm
