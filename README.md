@@ -4,7 +4,7 @@
 
 A prototype Excel productivity tracking solution designed around a financial operations use case.
 
-💡Business Problems
+💡**Business Problems**
 
 <ul>
 <li>Productivity was being tracked manually.</li>
@@ -15,9 +15,9 @@ A prototype Excel productivity tracking solution designed around a financial ope
 
 💡 Solution
 
-These problems could be solved with an Excel tool that will combines several functionalities with an easy-to-use interface.
-This tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self-assessment of employee results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
-A feedback worksheet was added for a continuous improvement.
+These problems could be solved with an Excel tool that combines several functionalities with an easy-to-use interface.
+This tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily productivity calculations can provide a useful way for employees to assess their performance. Additionally, this tool can be utilized as a part of productivity assessments by analysts and managers. 
+A feedback worksheet was added to support a continuous improvement.
 
 
 🎯 **Objectives**
@@ -25,8 +25,8 @@ A feedback worksheet was added for a continuous improvement.
 <li>Tracking daily productivity based on several different work types with assigned weights</li>
 <li>Providing an easy-to-use tool for employees that can be used further by analysts and managers</li>
 <li>Utilizing weighted sums for the calculations</li>
-<li>Conditional formating assigned to productivity values</li>
-<li>Implementing simple VBA script to minimalize manual input and automate reccurring actions (adding a line for a new date and preparing charts)</li>
+<li>Conditional formatting assigned to productivity values</li>
+<li>Implementing simple VBA script to minimize manual input and automate recurring actions (adding a line for a new date and preparing charts)</li>
 </ul>
 
 📋 **Files**
@@ -38,7 +38,7 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 |---------|-------------|
 | `Dashboard`| Stores number of tasks processed daily, AHT (Average Handle Time) and productivity results. Utilizes buttons for adding a new day, new work item and clearing cell content. |
 | `Chart` | Contains PivotTable and PivotChart for easy visual comparison of day-by-day productivity. |
-| `Feedback` | Provides a structured dropdown‑based form created for a continous improvement based on the feedback received. |
+| `Feedback` | Provides a structured dropdown‑based form created for a continuous improvement based on the feedback received. |
 | `License` | Describes MIT License details. |
 
 
@@ -54,15 +54,15 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 
 **🧮Formulas**
 
-** Average Handle Time (AHT) Sum & Productivity Formulas*
+** Average Handle Time (AHT) Sum & Productivity Formulas**
 
 AHT formulas are calculated based on a weighted sum. Some tasks are longer due to extra steps or complexity. I estimated the weights as below:
 
 <img width="905" height="71" alt="image" src="https://github.com/user-attachments/assets/20438cbd-5fa7-4658-a98b-b0b93ccd3178" />
 
-When calculating the productivity, we need to remember that an employee won't be spending 100% of their login time on processing tasks. Lunch breaks, meetings, trainings or scheduled system updates will reduce raw processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 minutes. Periodically,  meetings with Q&A sessions or integration focused events might be longer. 
+When calculating the productivity, we need to remember that an employee won't be spending 100% of their login time on processing tasks. Lunch breaks, meetings, trainings and scheduled system updates reduce the available processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 minutes. Periodically,  meetings with Q&A sessions or integration-focused events might be longer. 
 
-Assuming that 400 out of 480 work minutes are spend on actual task processing, I based the formula on a weigthed sum.
+Assuming that 400 out of 480 work minutes are spent on actual task processing, I based the formula on a weighted sum.
 
 **AHT Formula** : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
 
@@ -70,7 +70,7 @@ Assuming that 400 out of 480 work minutes are spend on actual task processing, I
 
 ** Average AHT and Average Productivity **
 
-Calculating the average values might give employees a data representation of their progress, especially when paired with conditional formatting (low results- red, average results- yellow, good results- green).
+Calculating the average values provides employees with a clear view of their progress, especially when paired with conditional formatting (low results- red, average results- yellow, good results- green).
 
 **Average AHT Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(L:L; ">0"); 2); 0) </h3>**
 "IFERROR" operator was used to avoid blank rows throwing an error. Result is rounded up to two decimal places.
@@ -80,7 +80,7 @@ Calculating the average values might give employees a data representation of the
 As above, "IFERROR" operator was used to avoid blank rows throwing an error and the result is rounded up to two decimal places.
 
 ** Top Day (Best productivity) **
-To find the top performance day, I used the MATCH operator to join the date (A column) of the highest value in M column (Productivity). 
+To find the highest-performance day, I used the MATCH operator to join the date (A column) of the highest value in M column (Productivity). 
 
 **<h3> =TEXT(INDEX(A:A; MATCH(MAX(M:M); M:M; 0)); "DD/MM")
  & " - "
@@ -90,7 +90,7 @@ To find the top performance day, I used the MATCH operator to join the date (A c
 
 💻 **Add Work Item**
 
-This script was used to allow easy adding of a new work item. The work type is selected from a dropdown list first and then button can be used to increase the value of the selected work type.
+This script allows users to easily add a new work item. The work type is selected from a dropdown list first and then button can be used to increase the value of the selected work type.
 
 <img width="323" height="529" alt="image" src="https://github.com/user-attachments/assets/0bdc4806-65cc-4e3c-8e7f-0f4dfad59435" />
 
@@ -104,13 +104,13 @@ This simple macro was included to allow quick clearing of the cells without disr
 
 💻 **Add New Day**
 
-Adding a new date for the Data worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, the macro was created in a way that ensures that only the date and formulas are copied to the next day, while not duplicating the previous work amount values.
+Adding a new date to the Data worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, the macro was created in a way that ensures that only the date and formulas are copied to the next day, while not duplicating the previous work amount values.
 
 <img width="370" height="279" alt="image" src="https://github.com/user-attachments/assets/57750589-b7c8-493f-b06c-512f7bdaa4aa" />
 
-💡 **Key Insight**
+💡 **Key Insights**
 
-Good quality work tools need to be based on an approach that involves minimum user input while allowing for complex calculations. With this tool I wanted to showcase that utilizing simple VBA scripts can help with creating a file that is easy to use for an end user while still providing advanced functionality. Weighted productivity provides a more informative measure than task volume alone because different work types have different complexity levels.
+Good quality work tools need to be based on an approach that involves minimal user input while allowing for complex calculations. With this tool I wanted to showcase that utilizing simple VBA scripts can help with creating a file that is easy to use for the end user while still providing advanced functionality. Weighted productivity provides a more informative measure than task volume alone because different work types have different complexity levels.
 
 ✉ **---Contact me---**
 For any questions, please contact me at jakub.klinger1996@gmail.com.
