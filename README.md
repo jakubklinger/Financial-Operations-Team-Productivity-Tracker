@@ -72,27 +72,28 @@ When calculating the productivity, we need to remember that an employee won't be
 
 Assuming that 400 out of 480 work minutes are spent on actual task processing, I based the formula on a weighted sum.
 
-**AHT Formula** : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
+**AHT Formula** : <h4> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h4>
 
-**Productivity Formula** : <h3> **=ROUND(L4/400; 2)** </h3> alternatively: **<h3> =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2) </h3>**
+**Productivity Formula** : <h4> **=ROUND(L4/400; 2)** </h4> 
+Alternatively: **<h4> =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2) </h4>**
 
 ** Average AHT and Average Productivity **
 
 Calculating the average values provides employees with a clear view of their progress, especially when paired with conditional formatting (low results- red, average results- yellow, good results- green).
 
-**Average AHT Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(L:L; ">0"); 2); 0) </h3>**
+**Average AHT Formula** : **<h4> =IFERROR(ROUND(AVERAGEIF(L:L; ">0"); 2); 0) </h4>**
 "IFERROR" operator was used to avoid blank rows throwing an error. Result is rounded to two decimal places.
 
-**Average Productivity Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(M:M; ">0"); 2); 0) </h3>**
+**Average Productivity Formula** : **<h4> =IFERROR(ROUND(AVERAGEIF(M:M; ">0"); 2); 0) </h4>**
 
 As above, "IFERROR" operator was used to avoid blank rows throwing an error and the result is rounded to two decimal places.
 
 ** Top Day (Best productivity) **
 To find the highest-performance day, I used the MATCH operator to join the date (A column) of the highest value in M column (Productivity). 
 
-**<h3> =TEXT(INDEX(A:A; MATCH(MAX(M:M); M:M; 0)); "DD/MM")
+**<h4> =TEXT(INDEX(A:A; MATCH(MAX(M:M); M:M; 0)); "DD/MM")
  & " - "
- & TEXT(MAX(M:M); "0,00%") </h3>**
+ & TEXT(MAX(M:M); "0,00%") </h4>**
 
 **</>** **VBA Scripts **
 
