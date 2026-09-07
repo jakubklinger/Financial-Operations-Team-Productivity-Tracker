@@ -22,12 +22,20 @@ A feedback worksheet was added to support continuous improvement.
 
 🎯 **Objectives**
 <ul>
-<li>Tracking daily productivity based on several different work types with assigned weights</li>
+<li>Tracking daily productivity based on several different work types </li>
 <li>Providing an easy-to-use tool for employees that can be used further by analysts and managers</li>
+<li>Implementing simple VBA script to minimize manual input and automate recurring actions </li>
+</ul>
+
+✨ Key Features
+<ul>
+ (adding a line for a new date and preparing charts)
+
+
 <li>Utilizing weighted sums for the calculations</li>
 <li>Conditional formatting assigned to productivity values</li>
-<li>Implementing simple VBA script to minimize manual input and automate recurring actions (adding a line for a new date and preparing charts)</li>
 </ul>
+
 
 📋 **Files**
 Financial Operations Team Productivity Tracker Ver 1.0.xlsm
@@ -73,11 +81,11 @@ Assuming that 400 out of 480 work minutes are spent on actual task processing, I
 Calculating the average values provides employees with a clear view of their progress, especially when paired with conditional formatting (low results- red, average results- yellow, good results- green).
 
 **Average AHT Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(L:L; ">0"); 2); 0) </h3>**
-"IFERROR" operator was used to avoid blank rows throwing an error. Result is rounded up to two decimal places.
+"IFERROR" operator was used to avoid blank rows throwing an error. Result is rounded to two decimal places.
 
 **Average Productivity Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(M:M; ">0"); 2); 0) </h3>**
 
-As above, "IFERROR" operator was used to avoid blank rows throwing an error and the result is rounded up to two decimal places.
+As above, "IFERROR" operator was used to avoid blank rows throwing an error and the result is rounded to two decimal places.
 
 ** Top Day (Best productivity) **
 To find the highest-performance day, I used the MATCH operator to join the date (A column) of the highest value in M column (Productivity). 
