@@ -66,7 +66,7 @@ Assuming that 400 out of 480 work minutes are spend on actual task processing, I
 
 **AHT Formula** : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
 
-**Productivity Formula** : <h3> **=ROUND(L4/400; 2)** </h3> alternatively: **<h3> =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2) </h3> **
+**Productivity Formula** : <h3> **=ROUND(L4/400; 2)** </h3> alternatively: **<h3> =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2) </h3>**
 
 ** Average AHT and Average Productivity **
 
