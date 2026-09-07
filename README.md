@@ -54,31 +54,45 @@ Assuming that 400 out of 480 work minutes are spend on actual task processing, I
 
 **AHT Formula** : <h3> **=SUMPRODUCT(B4:K4;$P$16:$Y$16)** </h3>
 
-Productivity 
-
-**Productivity Formula** : <h3> **=ROUND(L4/400; 2)** </h3> alternatively: =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2)
-
-**</>** **VBA Scripts **
-
+**Productivity Formula** : <h3> **=ROUND(L4/400; 2)** </h3> alternatively: **<h3> =ROUND((SUMPRODUCT(B4:K4;$P$16:$Y$16))/400; 2) </h3> **
 
 ** Average AHT and Average Productivity **
 
 Calculating the average values might give employees a data representation of their progress, especially when paired with conditional formatting (low results- red, average results- yellow, good results- green).
 
 **Average AHT Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(L:L; ">0"); 2); 0) </h3>**
+"IFERROR" operator was used to avoid blank rows throwing an error. Result is rounded up to two decimal places.
 
+**Average Productivity Formula** : **<h3> =IFERROR(ROUND(AVERAGEIF(M:M; ">0"); 2); 0) </h3>**
 
+As above, "IFERROR" operator was used to avoid blank rows throwing an error and the result is rounded up to two decimal places.
 
+** Top Day (Best productivity) **
+To find the top performance day, I used the MATCH operator to join the date (A column) of the highest valey in M column (Productivity). 
+
+**<h3> =TEXT(INDEX(A:A; MATCH(MAX(M:M); M:M; 0)); "DD/MM")
+ & " - "
+ & TEXT(MAX(M:M); "0,00%") </h3>**
+
+**</>** **VBA Scripts **
 
 💻 **Add Work Item**
 
+This script was used to allow easy adding of new work item. The worktype is selected from a dropdown list first and then button can be used to increase the value of selected work type.
+
 <img width="323" height="529" alt="image" src="https://github.com/user-attachments/assets/0bdc4806-65cc-4e3c-8e7f-0f4dfad59435" />
+
 
 💻 **Delete Work Item**
 
+This simple macro was included to allow quick clearing of the cells without disrupting the whole file.
+
 <img width="531" height="110" alt="image" src="https://github.com/user-attachments/assets/cb6b7fca-dca9-4ec2-9b62-984b2567efe0" />
 
+
 💻 **Add New Day**
+
+Adding a new date for the Data worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, macro was created in a way that ensures that only date and formulas are copied to next day, while not duplicating the previous work ammount values.
 
 <img width="370" height="279" alt="image" src="https://github.com/user-attachments/assets/57750589-b7c8-493f-b06c-512f7bdaa4aa" />
 
