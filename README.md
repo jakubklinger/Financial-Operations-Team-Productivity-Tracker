@@ -1,4 +1,4 @@
-# Financial-Operations-Team-Productivity-Tracker
+# Excel Productivity Tracker | VBA Automation & Dashboard
 
 📌 **Project Overview**
 
