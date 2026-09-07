@@ -18,8 +18,6 @@ A prototype Excel productivity tracking solution designed around a financial ope
 These problems can be solved with an Excel tool that combines several functionalities with an easy-to-use interface.
 The tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily productivity calculations can provide a useful way for employees to assess their performance. Additionally, this tool can be utilized as a part of productivity assessments by analysts and managers. 
 
-
-
 🎯 **Objectives**
 <ul>
 <li>Tracking daily productivity based on several different work types </li>
@@ -50,6 +48,7 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 
 
 🛠️ **Stack**
+
 <ul> <li>Microsoft Excel 365</li>
 <li>VBA (Visual Basic for Applications)</li>
 <li>PivotTables & PivotCharts</li>
@@ -57,7 +56,9 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 
 📊**Dashboard Overview**
 
+
 <img width="1115" height="398" alt="image" src="https://github.com/user-attachments/assets/4b8f6b5c-3743-45c3-858a-db3b407b5001" />
+
 
 🧮**Formulas**
 
