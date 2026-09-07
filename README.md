@@ -16,8 +16,8 @@ A prototype Excel productivity tracking solution designed around a financial ope
 💡 Solution
 
 These problems could be solved with an Excel tool that combines several functionalities with an easy-to-use interface.
-This tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily productivity calculations can provide a useful way for employees to assess their performance. Additionally, this tool can be utilized as a part of productivity assessments by analysts and managers. 
-A feedback worksheet was added to support a continuous improvement.
+The tool utilizes control buttons and VBA code as well as PivotTable/Chart functionality. Daily productivity calculations can provide a useful way for employees to assess their performance. Additionally, this tool can be utilized as a part of productivity assessments by analysts and managers. 
+A feedback worksheet was added to support continuous improvement.
 
 
 🎯 **Objectives**
@@ -60,7 +60,7 @@ AHT formulas are calculated based on a weighted sum. Some tasks are longer due t
 
 <img width="905" height="71" alt="image" src="https://github.com/user-attachments/assets/20438cbd-5fa7-4658-a98b-b0b93ccd3178" />
 
-When calculating the productivity, we need to remember that an employee won't be spending 100% of their login time on processing tasks. Lunch breaks, meetings, trainings and scheduled system updates reduce the available processing time. We can assume that on average, 30-40 minutes a day are spent on the breaks and around 30-90 on meetings. Usually, daily meetings are kept short for crucial updates, taking between 15-30 minutes. Periodically,  meetings with Q&A sessions or integration-focused events might be longer. 
+When calculating the productivity, we need to remember that an employee won't be spending 100% of their login time on processing tasks. Lunch breaks, meetings, trainings and scheduled system updates reduce the available processing time. For this prototype, I assumed that approximately 400 of 480 working minutes are available for task processing. This assumption can be adjusted depending on the team's operating model.
 
 Assuming that 400 out of 480 work minutes are spent on actual task processing, I based the formula on a weighted sum.
 
@@ -104,7 +104,7 @@ This simple macro was included to allow quick clearing of the cells without disr
 
 💻 **Add New Day**
 
-Adding a new date to the Data worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, the macro was created in a way that ensures that only the date and formulas are copied to the next day, while not duplicating the previous work amount values.
+Adding a new date to the Dashboard worksheet is easy with VBA usage. After clicking on the button, today's date is automatically added. What's more, the macro was created in a way that ensures that only the date and formulas are copied to the next day, while not duplicating the previous work amount values.
 
 <img width="370" height="279" alt="image" src="https://github.com/user-attachments/assets/57750589-b7c8-493f-b06c-512f7bdaa4aa" />
 
