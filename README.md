@@ -6,10 +6,13 @@
 
 The aim was to create an Excel tracking tool that could be utilised by investment/mutual funds companies. 
 
-It combines easy to use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self assestment of employee's results. What's more this tool can be utilized as a part of the productivity assetments by analysts and managers. 
+It combines easy to use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self assessment of employee's results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
 
 Feedback worksheet was added for a continous improvement.
 
+
+** Business Impact **
+This tool reduces manual reporting time, standardizes productivity measurement, and enables managers to identify bottlenecks in daily operations.
 
 🎯 **Objectives**
 <ul>
@@ -29,12 +32,15 @@ Financial Operations Team Productivity Tracker Ver 1.0.xlsm
 |---------|-------------|
 | `Dashboard`| Stores number of tasks processed daily, AHT (Average Handle Time) and productivity results. Utilizes buttons for adding new day, new work item and clear cell's content. |
 | `Chart` | Contains PivotTable and Pivot Chart for easy visual comparison of day by day productivity. |
-| `Feedback` | Dropdown based sheet created for a continous improvement based on the feedback received. |
+| `Feedback` | Provides a structured dropdown‑based form created for a continous improvement based on the feedback received. |
 | `License` | Describes MIT License details. |
 
 
 🛠️ **Stack**
-Microsoft Excel 365
+<ul> <li>Microsoft Excel 365</li>
+<li>VBA (Visual Basic for Applications)</li>
+<li>PivotTables & PivotCharts</li>
+<li>Conditional Formatting</li>
 
 **📊Dashboard Overview**
 
