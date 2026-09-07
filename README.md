@@ -4,10 +4,19 @@
 
 
 
-The aim was to create an Excel tracking tool that could be utilised by investment/mutual funds companies. 
+The aim was to create an Excel productivity tracking tool that could be utilised by investment/mutual funds companies. 
 
 It combines an easy-to-use user interface with control buttons and VBA code as well as PivotTable/Chart functionality. Daily calculations of productivity could be an excellent solution for self-assessment of employee results. Additionally, this tool can be utilized as a part of the productivity assetments by analysts and managers. 
 A feedback worksheet was added for a continous improvement.
+
+2. Business Problems
+
+<ul>
+<li>Productivity was being tracked manually.</li>
+<li>Different work types have different complexity.</li>
+<li>Raw task counts aren't sufficient for fair productivity comparison.</li>
+<li>Managers need an easy way to monitor trends.</li>li>
+</ul>
 
 ** Business Impact **
 This tool reduces manual reporting time, standardizes productivity measurement, and enables managers to identify bottlenecks in daily operations.
