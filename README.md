@@ -106,7 +106,7 @@ This script allows users to easily add a new work item. The work type is selecte
 
 💻 **Delete Work Item**
 
-This simple macro was included to allow quick clearing of the cells without disrupting the whole file.
+This macro was included to allow quick clearing of the cells without disrupting the whole file.
 
 <img width="531" height="110" alt="image" src="https://github.com/user-attachments/assets/cb6b7fca-dca9-4ec2-9b62-984b2567efe0" />
 
